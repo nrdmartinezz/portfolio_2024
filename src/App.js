@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Banner from "./components/Banner";
 
-function App() {
+let App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <div className="app-container">
+        <div className="home">
+          <h1 className="author-name">Nate <br/>Martinez</h1>
+          <p className="author-bio">
+            I design unique user experiences with purpose and a strong attention
+            to detail. Available for work.
+          </p>
+        </div>
+        <Projects></Projects>
+      </div>
+      <Banner></Banner>
     </div>
   );
-}
+};
 
 export default App;

@@ -11,3 +11,116 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a{
+  color:inherit;
+  text-decoration: none;
+}
+
+div{
+  display:flex;
+  flex:1;
+  /* border: 1px solid black; */
+}
+
+/* App Stylings STARTS */
+
+.App{
+  flex-direction: column;
+  align-items: stretch;
+  height:100vh;
+}
+
+.app-container{
+  flex-direction: row;
+  margin:64px 64px;
+}
+
+.home{
+  flex-wrap: wrap;
+  flex:2;
+  padding: 64px 0px;
+  align-content:center;
+}
+
+.author-name{
+  width:100%;
+  font-size:96px;
+  font-weight:400;
+  margin-bottom:0px;
+  color: #222;
+}
+
+.author-bio{
+  padding-left: 12px;
+  font-size:16px;
+  color:#9d9d9d
+}
+
+/* App Stylings END */
+
+/* Navbar Stylings STARTS */
+
+.navbar{
+  padding:12px 24px;
+  align-items: center;
+  max-height: 85px;
+  box-shadow: #00000020 0px 4px 10px;
+}
+
+.icon{
+  border-radius: 1000px;
+  border:1px solid red;
+  height:75px;
+  width:75px;
+}
+
+.site-name{
+  margin: auto 24px;
+}
+
+.nav-menu{
+  justify-content: flex-end;
+}
+
+.nav-menu a {
+  padding:12px 24px;
+}
+
+/* Navbar Stylings END */
+
+/* Projects Stylings STARTS */
+
+.project-list-container, .project-list{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-list-title{
+  color:#9d9d9d;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.project-list{
+  align-content: center;
+  max-height:500px;
+}
+.project-list-item-title{
+  font-weight: 800;
+  color:#666;
+}
+
+.project-list-item{
+  border-bottom:1px solid #d6d6d6;
+}
+
+.project-list-item-desc{
+  color:#ababab
+}
+
+/* Project Stylings END */
+
+/* Banner Stylings START */
+
+/* Banner Stylings END */
